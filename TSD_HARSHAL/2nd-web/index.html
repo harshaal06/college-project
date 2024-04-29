@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            justify-content: space-between;
+            display: flex;
+            padding: 5px 100px;
+            background-color: #f4511e;
+            letter-spacing: 3px;
+            font-size: 15px;
+            position: sticky;
+            top: 0;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.5s;
+        }
+        .navbar a:hover{
+            color: #d9534f;
+            background-color: white;
+            transition: 0.5s;
+        }
+        .navbar-items {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+        .navbar-items span{
+            color: white;
+        }
+        body {
+            margin: 0px;
+            font-family: Montserrat, sans-serif;
+        }
+        .hero {
+            padding-top: 40px;
+            padding-bottom: 100px;
+            background-color: #f4511e;
+            color: white;
+            text-align: center;
+        }
+        .hero p{
+            font-size: 72px;
+            text-align: center;
+        }
+        .hero-button{
+            margin-left: -3px; 
+            width: 80px; 
+            height: 34px; 
+            padding: 6px 12px; 
+            background-color: #d9534f; 
+            color: white; 
+            border-color: #f4511e; 
+            border-radius: 5px;
+        }
+        .hero-text{
+            width: 540px; 
+            height: 20px; 
+            padding: 6px 12px; 
+            border-radius: 5px; 
+            margin-right: -3px;
+            border: transparent;
+        }
+        .hero2 {
+            display: flex;
+        }
+        .hero2-text {
+            width: 60%;
+            padding: 50px;
+        }
+        .hero2-text h2{
+            font-size: 40px;
+        }
+        .hero2-text p {
+            color: #303030;
+            padding-top: 40px;
+            padding-bottom: 50px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        .hero2-text h4 {
+            font-size: 20px;
+            padding-top: 50px;
+            color: #303030;
+        }
+        .hero2-button {
+            width: 120px;
+            height: 35px;
+            padding: 6px 12px;
+            border: 0.4px solid black;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .graph-img{
+            height: 400px;
+        }
+
+        .hero3{
+            background-color: #f6f6f6;
+            padding: 50px;
+            display: flex;
+        }
+        .img-box{
+            width: 440px;
+            margin-right: 150px;
+        }
+        .hero3-text h2{
+            font-weight: 500;
+            font-size: 27px;
+        }
+        .hero3-text p{
+            font-size: 20px;
+            margin-top: 60px;
+        }
+        .hero3-text div{
+            margin-top: 60px;
+            font-size: 15px;
+            color: gray;
+        }
+        .hero4{
+            padding: 50px;
+        }
+        .hero4 h2{
+            text-align: center;
+            font-size: 27px;
+        }
+        .hero4 p{
+            text-align: center;
+            font-size: 25px;
+        }
+        .card-box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+            text-align: center;
+            width: 25%;
+            margin: 50px;
+        }
+        .hero5{
+            background-color: #f6f6f6;
+            padding: 50px;
+        }
+        .hero5 h2{
+            text-align: center;
+            font-size: 27px;
+        }
+        .hero5 p{
+            text-align: center;
+            font-size: 25px;
+        }
+        .hero5-card-box{
+            display: flex;
+        }
+        .hero5-card{
+            text-align: center;
+            width: 30%;
+            margin: 10px;
+            background-color: #fff;
+        }
+        .hero5-card img{
+            width: 100%;
+        }
+        .hero5-card h2{
+            font-size: 18px;
+            color: gray;
+        }
+        .show{
+            font-size: 18px;
+            text-align: center;
+            margin: 100px;
+            color: gray;
+        }
+
+        .hero6{
+            padding: 50px 40px;
+        }
+        .hero6 h2{
+            text-align: center;
+            font-size: 25px;
+        }
+        .hero6 p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .hero6-card-box{
+            display: flex;
+        }
+        .hero6-card{
+            text-align: center;
+            width: 33%;
+            margin: 15px;
+            border: 1px solid #f4511e;
+            color: gray;
+        }
+        .sign-up{
+            margin: 25px;
+            padding: 13px 18px;
+            font-size: 18px;
+            border: none;
+            background-color: #f4511e;
+            color: #fff;
+            border: 1px solid #f4511e;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .sign-up:hover{
+            background-color: #fff;
+            color: #f4511e;
+        }
+        .hero7{
+            padding: 50px 40px;
+            background-color: #f6f6f6;
+            display: flex;
+        }
+        .contact-1{
+            padding-top: 50px;
+            color: gray;
+            font-size: 15px;
+            width: 40%;
+        }
+        .contact-2{
+            width: 60%;
+        }
+        .contact-2 h2{
+            font-size: 25px;
+            margin-left: 20px;
+        }
+        .contact-2 input{
+            padding: 8px 12px;
+            border: 1px solid rgb(179, 179, 179);
+            color: gray;
+            margin-right: 15px;
+            width: 42%;
+            border-radius: 5px;
+        }
+        .contact-2 input:hover{
+            border: 1px solid ;
+        }
+        .contact-2 textarea{
+            padding: 8px 12px;
+            border: 1px solid rgb(179, 179, 179);
+            color: gray;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        .contact-2 button{
+            padding: 10px 15px;
+            border: 1px solid rgb(179, 179, 179);
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+            margin-top: 20px;
+            margin-right: 48px;
+            display: block;
+            margin-left: auto;
+        }
+        .contact-2 button:hover{
+            background-color: rgb(221, 221, 221);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-items">
+            <span>Logo</span>
+        </div>
+        <div>
+            <a href="" class="navbar-items">ABOUT</a>
+            <a href="" class="navbar-items">SERVICES</a>
+            <a href="" class="navbar-items">PORTFOLIO</a>
+            <a href="" class="navbar-items">PRICING</a>
+            <a href="" class="navbar-items">CONTACT</a>
+        </div>
+    </div>
+    <div class="hero">
+        <p style="font-size: 72px; margin-bottom: 10px;">Company</p>
+        <p style="font-size: 25px; margin-top: 10px;">We specialize in blablabla</p>
+        <div>
+            <input type="text" placeholder="Email Address" class="hero-text">
+            <input type="button" value="Subscribe" class="hero-button">
+        </div>
+    </div>
+    <div class="hero2">
+        <div class="hero2-text">
+            <h2>ABOUT COMPANY PAGE</h2>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <input class="hero2-button" type="button" value="Get in Touch">
+        </div>
+        <div>
+            <img src="./image/graph.png" alt="" class="graph-img">
+        </div>
+    </div>
+    <div class="hero3">
+        <div class="img-box">
+            <img src="./image/earth.png" alt="" srcset="">
+        </div>
+        <div class="hero3-text">
+            <h1>OUR VALUES</h1>
+            <p><b>MISSION:</b> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>VISION: Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div>
+    <div class="hero4">
+        <h2>SERVICES</h2>
+        <p>What we offer</p>
+        <div class="card-box">
+            <div class="card">
+                <img src="./image/img1.png" alt="">
+                <h2 style="font-weight: lighter;">POWER</h2>
+                <p  style="font-size: 15px; color: gray;">Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="card">
+                <img src="./image/LOVE.png" alt="">
+                <h2 style="font-weight: lighter;">LOVE</h2>
+                <p  style="font-size: 15px; color: gray;">Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="card">
+                <img src="./image/JOB DONE.png" alt="">
+                <h2 style="font-weight: lighter;">JOB DONE</h2>
+                <p  style="font-size: 15px; color: gray;">Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="card">
+                <img src="./image/GREEN.png" alt="">
+                <h2 style="font-weight: lighter;">GREEN</h2>
+                <p  style="font-size: 15px; color: gray;">Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="card">
+                <img src="./image/CERTIFIED.png" alt="">
+                <h2 style="font-weight: lighter;">CERTIFIED</h2>
+                <p  style="font-size: 15px; color: gray;">Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="card">
+                <img src="./image/HARD WORK.png" alt="">
+                <h2 style="font-weight: lighter;">HARD WORK</h2>
+                <p  style="font-size: 15px; color: gray;">Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero5">
+        <h2>PORTFOLIO</h2>
+        <p>What we have created</p>
+        <div class="hero5-card-box">
+            <div class="hero5-card">
+                <img src="https://www.w3schools.com/bootstrap/paris.jpg" alt="">
+                <h2 style="font-weight: lighter;">Paris</h2>
+                <p  style="font-size: 15px; color: gray;">We built New York</p>
+            </div>
+            <div class="hero5-card">
+                <img src="https://www.w3schools.com/bootstrap/newyork.jpg" alt="">
+                <h2 style="font-weight: lighter;">New York</h2>
+                <p  style="font-size: 15px; color: gray;">Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="hero5-card">
+                <img src="https://www.w3schools.com/bootstrap/sanfran.jpg" alt="">
+                <h2 style="font-weight: lighter;">San Francisco</h2>
+                <p  style="font-size: 15px; color: gray;">Yes, San Fran is ours</p>
+            </div>
+        </div>
+        <h2 style="margin-top: 50px;">WHAT OUR CUSTOMERS SAY</h2>
+        <div class="show">"Could I... BE any more hadivpy with this company?"<br>Chandler Bing, Actor, FriendsAlot</div>
+    </div>
+    <div class="hero6">
+        <h2>PRICING</h2>
+        <p>Choose a payment plan that works for you</p>
+        <div class="hero6-card-box">
+            <div class="hero6-card">
+                <h1 style="font-weight: lighter;padding: 40px; background-color: #f4511e; margin: 0; color: white;">Basic</h1>
+                <p  style="font-size: 15px; margin:25px;"><b>20</b> Lorem </p>
+                <p  style="font-size: 15px; margin:25px;"><b>15</b> Ipsum </p>
+                <p  style="font-size: 15px; margin:25px;"><b>5</b> Dolor </p>
+                <p  style="font-size: 15px; margin:25px;"><b>2</b> Sit </p>
+                <p  style="font-size: 15px; margin:25px;"><b>Endless</b>  Amet </p><hr/>
+                <h1 style="font-weight: lighter;margin-bottom: 0px;">$19</h1>
+                <p  style="font-size: 13px;">per month</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+            <div class="hero6-card">
+                <h1 style="font-weight: lighter;padding: 40px; background-color: #f4511e; margin: 0; color: white;">Pro</h1>
+                <p  style="font-size: 15px; margin:25px;"><b>50</b> Lorem </p>
+                <p  style="font-size: 15px; margin:25px;"><b>25</b> Ipsum </p>
+                <p  style="font-size: 15px; margin:25px;"><b>10</b> Dolor </p>
+                <p  style="font-size: 15px; margin:25px;"><b>5</b> Sit </p>
+                <p  style="font-size: 15px; margin:25px;"><b>Endless</b>  Amet </p><hr/>
+                <h1 style="font-weight: lighter;margin-bottom: 0px;">$29</h1>
+                <p  style="font-size: 13px;">per month</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+            <div class="hero6-card">
+                <h1 style="font-weight: lighter;padding: 40px; background-color: #f4511e; margin: 0; color: white;">Premium</h1>
+                <p  style="font-size: 15px; margin:25px;"><b>100</b> Lorem </p>
+                <p  style="font-size: 15px; margin:25px;"><b>50</b> Ipsum </p>
+                <p  style="font-size: 15px; margin:25px;"><b>25</b> Dolor </p>
+                <p  style="font-size: 15px; margin:25px;"><b>10</b> Sit </p>
+                <p  style="font-size: 15px; margin:25px;"><b>Endless</b>  Amet </p><hr/>
+                <h1 style="font-weight: lighter;margin-bottom: 0px;">$49</h1>
+                <p  style="font-size: 13px;">per month</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <!-- 7339 -->
+    <div class="hero7">
+        <div class="contact-1">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p>Chicago, US</p>
+            <p>+00 1515151515</p>
+            <p>myemail@something.com</p>
+        </div>
+        <div class="contact-2">
+            <h2>CONTACT</h2>
+            <div>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="Comment" id="" cols="91" rows="6" placeholder="Comment"></textarea>
+            </div>
+            <button>Send</button>
+        </div>
+    </div>
+    <div class="hero8">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" style="width: 100%;">
+    </div>
+    <div style="padding: 50px; text-align: center;color: gray;font-size: 15px;">
+        <a href="#" style="font-size: 50px;text-decoration: none;color: #f4511e;">^</a>
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com/">www.w3schools.com</a></p>
+    </div>
+</body>
+</html>

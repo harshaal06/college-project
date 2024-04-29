@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd-Web</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Lato, sans-serif;
+            color: #777;
+        }
+        a{
+            text-decoration: none;
+            color: #d2d2d2;
+        }
+        .navbar{
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+        .name{
+            font-size: 20px;
+            padding: 15px;
+        }
+        .nav-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-list{
+            list-style: none;
+            margin: 0 20px;
+            color: #c1c1c1;
+        }
+        .main-img{
+            width: 100%;
+        }
+        .main-img-box{
+            position: relativex;
+        }
+        .img-hed{
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            color: #fff;
+            top: 750px;
+        }
+        .name-img{
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .band-sec{
+            padding: 70px;
+        }
+        .text-band{
+            text-align: center;
+        }
+        .des-band{
+            margin: 10px auto;
+            width: 940px;
+        }
+        .band-card-box{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .band-card{
+            text-align: center;
+            width: 220px;
+        }
+        .band-img{
+            margin-top: 50px;
+            width: 100%;
+            display: block;
+            border-radius: 50%;
+        }
+        .tour-box{
+            margin-top: 40px;
+            width: 100%;
+            background-color: #fff;
+            color: #777;
+            text-align: left;
+        }
+        .m-name{
+            padding: 15px;
+            border-bottom: 1px #777 solid;
+        }
+        .m-red{
+            padding: 4px;
+            background-color: #d9534f;
+            color: #fff;
+            font-size: 13px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        /* .band-card-m{
+            width: 300px;
+        } */
+        .buy-btn{
+            background-color: #2d2d30;
+            color: #fff;
+            font-size: 15px;
+            padding: 12px 15px;
+            margin: 10px 90px;
+            border: 1px solid #2d2d30;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .buy-btn:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        .contact{
+            text-align: left;
+            width: 40%;
+        }
+        .contact-in{
+            width: 60%;
+        }
+        .contact-in input{
+            padding: 8px 12px;
+            border: 1px solid rgb(179, 179, 179);
+            color: gray;
+            width: 500px;
+        }
+        .contact-in input:hover{
+            border: 1px solid ;
+        }
+        .contact-in textarea{
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid rgb(179, 179, 179);
+            color: gray;
+            margin-top: 15px;
+        }
+        .con-btn{
+            padding: 15px 30px;
+            border: 1px solid rgb(179, 179, 179);
+            cursor: pointer;
+            background-color: #000;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            color: #fff;
+        }
+        .con-btn:hover{
+            background-color: rgb(221, 221, 221);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="name">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="nav-item">
+            <li class="nav-list"><a href="#">HOME</a></li>
+            <li class="nav-list"><a href="#">BAND</a></li>
+            <li class="nav-list"><a href="#">TOUR</a></li>
+            <li class="nav-list"><a href="#">CONTACT</a></li>
+            <li class="nav-list"><a href="#">MORE</a></li>
+            <li class="nav-list"><a href="#">🔍</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <div class="main-img-box">
+            <img src="https://www.w3schools.com/bootstrap/chicago.jpg" class="main-img">
+            <div class="img-hed">
+                <p class="name-img">Chicago</p>
+                <p>Thank you, Chicago - A night we won't forget.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="band-sec">
+        <div class="container">
+            <div class="text-band">
+                <p class="name-img">THE BAND</p>
+                <i>We love music!</i>
+                <div class="des-band">
+                    <p style="font-size: 15px;">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="band-card-box">
+                        <div class="band-card">
+                            <b>Name</b>
+                            <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" class="band-img">
+                        </div>
+                        <div class="band-card">
+                            <b>Name</b>
+                            <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" class="band-img">
+                        </div>
+                        <div class="band-card">
+                            <b>Name</b>
+                            <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" class="band-img">
+                        </div>
+                    </div>
+                    <p>Drummer</p>
+                    <p>Loves drummin'</p>
+                    <p>Member since 1988</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="band-sec" style="background-color: #2d2d30; color: #fff;">
+        <div class="container">
+            <div class="text-band">
+                <p class="name-img">TOUR DATES</p>
+                <i>Lorem ipsum we'll play you some music.<br/>Remember to book your tickets!</i>
+                <div class="des-band">
+                    <div  class="tour-box">
+                        <div class="m-name">September <span class="m-red">Sold Out!</span></div>
+                        <div class="m-name">October <span class="m-red">Sold Out!</span></div>
+                        <div class="m-name">November</div>
+                    </div>
+                    <div class="band-card-box" style="justify-content: space-between;">
+                        <div style="background-color: #fff;color: #777;">
+                            <img src="https://www.w3schools.com/bootstrap/paris.jpg" style="width: 290px;">
+                            <p style="margin-bottom: 0px;"><i><b>Paris</b></i></p><br/>
+                            <p style="margin: 0;"><i>Friday 27 November 2015</i></p>
+                            <div class="buy-btn">Buy Tickets</div>
+                        </div>
+                        <div style="background-color: #fff;color: #777;">
+                            <img src="https://www.w3schools.com/bootstrap/newyork.jpg" style="width: 290px;">
+                            <p style="margin-bottom: 0px;"><i><b>New York</b></i></p><br/>
+                            <p style="margin: 0;"><i>Saturday 28 November 2015</i></p>
+                            <div class="buy-btn">Buy Tickets</div>
+                        </div>
+                        <div style="background-color: #fff;color: #777;">
+                            <img src="https://www.w3schools.com/bootstrap/sanfran.jpg" style="width: 290px;">
+                            <p style="margin-bottom: 0px;"><i><b>San Francisco</b></i></p><br/>
+                            <p style="margin: 0;"><i>Sunday 29 November 2015</i></p>
+                            <div class="buy-btn">Buy Tickets</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="band-sec contact-sec">
+        <div class="container">
+            <div class="text-band">
+                <p class="name-img">Contact</p>
+                <i>We love our fans!</i>
+                <div class="des-band" style="display: flex;">
+                    <div class="contact">
+                        <p>Fan? Drop a note.</p>
+                        <p>Chicago, US</p>
+                        <p>Phone: +00 1515151515</p>
+                        <p>Email: mail@mail.com</p>
+                    </div>
+                    <div class="contact-in">
+                        <div style="display: flex;">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email" style="margin-left: 20px;">
+                        </div>
+                        <textarea name="Comment" id="" cols="91" rows="6" placeholder="Comment"></textarea>
+                        <button class="con-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-band">
+            <p class="name-img">From The Blog</p>
+            <div class="des-band">
+            </div>
+        </div>
+    </div>
+    <div class="hero8">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" style="width: 100%;">
+    </div>
+    <div style="background-color: #2d2d30; padding: 50px; text-align: center;color: #fff;font-size: 15px;">
+        <a href="#" style="font-size: 50px;text-decoration: none;color: #f4511e;">^</a>
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com/">Harshal-Aglawe</a></p>
+    </div>
+</body>
+</html>

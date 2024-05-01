@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', Helvetica, Arial, Lucida, sans-serif !important;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.navbar-brand{
+    color: #6674cc;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.bag{
+    /* background-color: #fb5f04; */
+    background-color: #6674cc;
+    color: #fff;
+}
+/* .bod{
+    border: 1px solid #fb5f04;
+} */
+.nav-mar{
+    margin: 0 100px;
+}
+.nav-item{
+    color: #fff;
+    font-weight: lighter;
+    margin: 0 10px;
+}
+#header{
+    height: 100vh;
+}
+.fs-8{
+    font-size: 13px;
+}
+.img-hei{
+    height: 90vh;
+    filter: brightness(0.5) ;
+}
+.carousel-caption{
+    margin-bottom: 30vh;
+}
+.main-h{
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+}
+.main-d{
+    font-weight: 500;
+    font-size: 25px;
+    margin: 10px 80px;
+    color: #fff;
+}
+.program-card{
+    width: 270px;
+    height: auto;
+}
+.font{
+    font-size: 18px;
+}
+.w-40{
+    width: 37%;
+}
+.more-icon{
+    width: 70px;
+    background-color: #8891cd;
+    padding: 8px 25px;
+    margin-top: -5px;
+}
+.more-icon:hover{
+    background-color: #c3c6df;
+}
+.program-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.news-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.news-card{
+    width: 632px;
+    height: 150px;
+}
+.news-img{
+    height: 150px;
+}
+.college-img{
+    height: 350px;
+    filter: brightness(0.3);
+}
+.college-con{
+    top: 35%;
+    padding: 0 150px;
+}
+
+
+.har-dec{
+    text-decoration: none;
+    color: white;
+}
+.har-dec:hover{
+    color: #8891cd;
+}

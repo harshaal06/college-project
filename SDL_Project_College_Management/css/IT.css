@@ -1,0 +1,32 @@
+.col-hth{
+    height: 115vh;
+}
+.text-j{
+    text-align: justify;
+}
+.scroll{
+    width: 100%;
+    overflow-x: scroll;
+}
+.scroll::-webkit-scrollbar{
+    width: 0;
+}
+.card-wt-it{
+    width: 220px;
+    margin-top: 20px;
+}
+.fs-7{
+    font-size: 13px;
+}
+
+.tab-links{
+    color: #0d6efd;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
+}

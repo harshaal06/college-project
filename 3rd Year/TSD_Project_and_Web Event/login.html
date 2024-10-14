@@ -40,19 +40,43 @@
         <div class="container">
             <form class="card mx-auto my-5 shadow px-5 py-4 w-50 d-block">
                 <h1 class="text-center ">Login</h1>
-                <p class="mb-4 text-center fs-5">Create an account - <span class="ha">Register</span></p>
+                <p class="mb-4 text-center fs-5">Create an account - <a href="./register.html" class="ha">Register</a></p>
                 <p class="mb-2">Email : </p>
                 <input type="text" placeholder="email@example.com" required
-                    class="w-100 mb-4 p-2 px-3 rounded border border-black" id="input-Name">
+                    class="w-100 mb-4 p-2 px-3 rounded border border-black" id="login-email">
                 <p class="mb-2">Password : </p>
                 <input type="password" placeholder="*********" required
-                    class="w-100 mb-2 p-2 px-3 rounded border border-black" id="input-Name">
+                    class="w-100 mb-2 p-2 px-3 rounded border border-black" id="login-password">
                 <a href="#">Forgot your password?</a>
-                <button type="button" class="px-5 py-2 rounded border bag w-100 d-block my-4">Sign in</button>
+                <button type="button" class="px-5 py-2 rounded border bag w-100 d-block my-4" onclick="login()">Sign in</button>
 
             </form>
         </div>
     </div>
+
+    <script>
+        function login() {
+            const email = document.getElementById("login-email").value;
+            const password = document.getElementById("login-password").value;
+
+            // Check if the user exists in local storage
+            const user = localStorage.getItem(email);
+
+            if (user) {
+                const userData = JSON.parse(user);
+
+                // Validate password
+                if (userData.password === password) {
+                    alert(`Welcome, ${userData.firstName} ${userData.lastName}!`);
+                    window.location.href = "./index.html"; // Redirect after successful login
+                } else {
+                    alert("Incorrect password. Please try again.");
+                }
+            } else {
+                alert("User not found. Please register.");
+            }
+        }
+    </script>
 </body>
 
 </html>
